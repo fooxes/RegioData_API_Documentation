@@ -214,23 +214,23 @@ Get the latest data model at https://app.regiodata.org/data-models/product.json
 
 ### 3.1 Properties
 
-- id: String, Identifier, i.e. "allg_fisch"
-- title: String, The title of the property, i.e. "Fisch"
-- type: String, The type, written as the HTML form element, i.e. "input[type="radio"]",
-- required: Boelean, is the field required or optional, i.e. true
-- fields: String, a reference to an enum, only relevant when type == select, i.e."[allergies]"
-- description_short: String, A short description, "Angabe gleich, kleiner oder kleiner gleich"
-- description_long: String, A longer description, i.e. "FISCH und daraus gewonnene Erzeugnisse (außer Fischgelatine, die als Trägerstoff...- section: String, One of 9 sections, "3. Inhaltsstoffe & Produkthinweise"
-- sub_section: String, One of 23 sub sections, "3.2 Allergene & Unverträglichkeiten"
+- `id`: String, Identifier, i.e. "allg_fisch"
+- `title`: String, The title of the property, i.e. "Fisch"
+- `type`: String, The type, written as the HTML form element, i.e. "input[type="radio"]",
+- `required`: Boelean, is the field required or optional, i.e. true
+- `fields`: String, a reference to an enum, only relevant when type == select, i.e."[allergies]"
+- `description_short`: String, A short description, "Angabe gleich, kleiner oder kleiner gleich"
+- `description_long`: String, A longer description, i.e. "FISCH und daraus gewonnene Erzeugnisse (außer Fischgelatine, die als Trägerstoff...- section: String, One of 9 sections, "3. Inhaltsstoffe & Produkthinweise"
+- `sub_section`: String, One of 23 sub sections, "3.2 Allergene & Unverträglichkeiten"
 
 ### 3.2 Property Types
 
-- input[type="date"], a date field as a string in the format YYYY-MM-DD, i.e. "2024-07-25"
-- input[type=\"datetime-local\" readonly=true], a structured date time object with seconds and nanoseconds since 1970-01-01, i.e. {"seconds": 1652310819,"nanoseconds": 0}
-- input[type="number"], step="0.01"], a floating number, i.e. 0.134
-- input[type="number"], a integer number, i.e. 123
-- input[type="radio"], a boolean, i.e. true
-- select[multiple=true], an array of Strings, i.e. ["aus_regionaler_Erzeugung", "aus_kontrolliert_oekologischer_erzeugung"]
-- input[type="file"], an array of URLs, ["https://storage.googleapis.com/mcs-pim.appspot.com/ZHg24eriKfJWxpWEk8YG/media_images/foto.png"]
-- textarea, a long string, i.e. "Lorem ipsum"
-- shortString, a short string with less than 255 characters, i.e. "Lorem ipsum"
+- `input[type="date"]`, a date field as a string in the format YYYY-MM-DD, i.e. "2024-07-25"
+- `input[type=\"datetime-local\" readonly=true]`, a structured date time object with seconds and nanoseconds since 1970-01-01, i.e. {"seconds": 1652310819,"nanoseconds": 0}
+- `input[type="number"], step="0.01"]`, a floating number, i.e. 0.134
+- `input[type="number"]`, a integer number, i.e. 123
+- `input[type="radio"]`, a boolean, i.e. true
+- `select[multiple=true]`, an array of Strings, i.e. ["aus_regionaler_Erzeugung", "aus_kontrolliert_oekologischer_erzeugung"]
+- `input[type="file"]`, an array of URLs, ["https://storage.googleapis.com/mcs-pim.appspot.com/ZHg24eriKfJWxpWEk8YG/media_images/foto.png"]
+- `textarea`, a long string, i.e. "Lorem ipsum"
+- `shortString`, a short string with less than 255 characters, i.e. "Lorem ipsum"
